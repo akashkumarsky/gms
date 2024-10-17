@@ -1,0 +1,120 @@
+.error_403
+{
+	background: #293C66;
+}
+   .base {
+	padding-top: 5%;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	flex-direction: column;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  }
+   .base h1 {
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	font-family: "Ubuntu", sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 25vw;
+	display: block;
+	margin: 0;
+	color: #9ae1e2;
+	position: relative;
+	z-index: 0;
+	animation: colors 0.4s ease-in-out forwards;
+	animation-delay: 1.7s;
+  }
+   .base h1:before {
+	content: "U";
+	position: absolute;
+	top: -10%;
+	right: 38%;
+	transform: rotate(180deg);
+	font-size: 15vw;
+	color: #f6c667;
+	z-index: -1;
+	text-align: center;
+	animation: lock 0.2s ease-in-out forwards;
+	animation-delay: 1.5s;
+  }
+   .base h2 {
+	font-family: "Cabin", sans-serif;
+	color: #9ae1e2;
+	font-size: 5vw;
+	margin: 0;
+	text-transform: uppercase;
+	text-align: center;
+	animation: colors 0.4s ease-in-out forwards;
+	animation-delay: 2s;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  }
+   .base h5 {
+	font-family: "Cabin", sans-serif;
+	color: #9ae1e2;
+	font-size: 1.8vw;
+	margin: 0;
+	top:5%;
+	text-align: center;
+	opacity: 0;
+	animation: show 2s ease-in-out forwards;
+	color: #F75C1E;
+	animation-delay: 3s;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  }
+
+  .base p
+  {
+	font-family: "Cabin", sans-serif;
+	color: #fff;
+	font-size: 1.4vw;
+	margin: 0;
+	text-align: center;
+	opacity: 0;
+	animation: show 2s ease-in-out forwards;
+  }
+
+  .base a.back_btn
+  {
+	background: white;
+	color:black;
+	font-weight:600;
+	text-decoration: none;
+	margin:1%;
+	padding:1% 3%;
+	border-radius:15px;
+	border:none;
+  }
+
+  .base a.back_btn:hover
+  {
+	background:steelblue;
+	color:white;
+	transition: all 0.3s ease-in-out;
+  }
+  
+  @keyframes lock {
+	50% {
+	  top: -4%;
+	}
+	100% {
+	  top: -6%;
+	}
+  }
+  @keyframes colors {
+	50% {
+	  transform: scale(1.1);
+	}
+	100% {
+	  color: #F75C1E;
+	}
+  }
+  @keyframes show {
+	100% {
+	  opacity: 1;
+	}
+  }

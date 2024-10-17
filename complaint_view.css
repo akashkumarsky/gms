@@ -1,0 +1,122 @@
+.complain_view .view_wrapper
+{
+    width: 100%;
+    padding: 8% 10% 2% 10%;
+}
+
+.complain_view table
+{
+    width:100%;
+}
+
+.complain_view .bold
+{
+    font-weight:500;
+    background: #1D1B31;
+    color: azure;
+}
+
+.complain_view table td
+{
+    border:1px solid rgb(214, 214, 214);
+    padding:1.0em;
+}
+
+.complain_view tr.heading 
+{
+    background-color: #11101D;
+    color:white;
+}
+
+.complain_view td h4
+{
+    font-size:1em;
+    font-weight:500;
+}
+
+.complain_view td
+{
+    margin-left:20px;
+    font-size:16px;
+}
+
+.complain_view .complaint_head .heading h2
+{
+    font-size: 34px;
+    font-weight: 600;
+    color: #47444a;
+    background: rgb(237,235,238);
+    padding:1%;
+}
+
+.complain_view .complaint_body
+{
+    padding:1%;
+}
+
+.complain_view .complaint_body .category h4
+{
+    display: inline-block;
+}
+
+.complain_view .complaint_body .category span
+{
+    font-size:22px;
+}
+
+.complain_view .description h5
+{
+    display: inline-block;
+    font-size:18px;
+}
+
+.complain_view .username p, .complain_view .date_time p, .complain_view .employee p 
+{
+    font-weight: 500;
+    line-height:9px;
+}
+
+.complain_view form
+{
+    text-align: center;
+    /* margin:1% 0; */
+}
+
+.complain_view form textarea
+{
+    border-radius: 10px;
+    width:100%;
+    background: #1D1B31;
+    color:white;
+    font-weight:500;
+    box-sizing: border-box;
+    padding:2%;
+}
+
+.complain_view form textarea::placeholder
+{
+    color:rgb(80, 80, 80);
+    font-weight:500;
+}
+
+.complain_view form select
+{
+    border-radius: 10px;
+    background: #1D1B31;
+    color:white;
+    font-weight:500;
+    box-sizing: border-box;
+    padding:1% 2%;
+}
+
+.complain_view form button
+{
+    border-radius: 10px;
+    background: #1D1B31;
+    color:white;
+    font-weight:500;
+    text-transform: uppercase;
+    border:none;
+    box-sizing: border-box;
+    padding:1% 4%;
+}

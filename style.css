@@ -1,0 +1,394 @@
+
+/* Google Fonts Import Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sidebar
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 290px;
+  background: #11101d;
+  z-index: 100;
+  transition: all 0.5s ease;
+}
+
+.sidebar.close
+{
+  width: 78px;
+}
+
+.sidebar .logo-details
+{
+  margin-top: 10px;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .logo-details i
+{
+  font-size: 30px;
+  color: #fff;
+  height: 50px;
+  min-width: 78px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.sidebar .logo-details .logo_name
+{
+  font-size: 22px;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s ease;
+  transition-delay: 0.1s;
+}
+
+.sidebar.close .logo-details .logo_name
+{
+  transition-delay: 0s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sidebar .nav-links
+{
+  height: 100%;
+  padding: 30px 0 150px 0;
+  overflow: auto;
+}
+
+.sidebar.close .nav-links
+{
+  overflow: visible;
+}
+
+.sidebar .nav-links::-webkit-scrollbar
+{
+  display: none;
+}
+
+.sidebar .nav-links li
+{
+  position: relative;
+  list-style: none;
+  transition: all 0.4s ease;
+}
+
+.sidebar .nav-links li:hover
+{
+  background: #1d1b31;
+}
+
+.sidebar .nav-links li .icon-link
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar.close .nav-links li .icon-link
+{
+  display: block;
+}
+
+.sidebar .nav-links li i
+{
+  height: 50px;
+  min-width: 78px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sidebar .nav-links li.showMenu i.arrow
+{
+  transform: rotate(-180deg);
+}
+
+.sidebar.close .nav-links i.arrow
+{
+  display: none;
+}
+
+.sidebar .nav-links li a
+{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.sidebar .nav-links li a .link_name
+{
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  transition: all 0.4s ease;
+}
+
+.sidebar.close .nav-links li a .link_name
+{
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sidebar .nav-links li .sub-menu
+{
+  padding: 6px 6px 14px 80px;
+  margin-top: -10px;
+  background: #1d1b31;
+  display: none;
+}
+
+.sidebar .nav-links li.showMenu .sub-menu
+{
+  display: block;
+}
+
+.sidebar .nav-links li .sub-menu a
+{
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 0;
+  white-space: nowrap;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.sidebar .nav-links li .sub-menu a:hover
+{
+  opacity: 1;
+}
+
+.sidebar.close .nav-links li .sub-menu
+{
+  position: absolute;
+  left: 100%;
+  top: -10px;
+  margin-top: 0;
+  padding: 10px 20px;
+  border-radius: 0 6px 6px 0;
+  opacity: 0;
+  display: block;
+  pointer-events: none;
+  transition: 0s;
+}
+
+.sidebar.close .nav-links li:hover .sub-menu
+{
+  top: 0;
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.4s ease;
+}
+
+.sidebar .nav-links li .sub-menu .link_name
+{
+  display: none;
+}
+
+.sidebar.close .nav-links li .sub-menu .link_name
+{
+  font-size: 16px;
+  opacity: 1;
+  display: block;
+}
+
+.sidebar .nav-links li .sub-menu.blank
+{
+  opacity: 1;
+  pointer-events: auto;
+  padding: 3px 20px 6px 16px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sidebar .nav-links li:hover .sub-menu.blank
+{
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.home-section
+{
+    position: relative;
+    background: #f5f5f5;
+    min-height: 100vh;
+    width: calc(100% - 290px);
+    left: 290px;
+    transition: all 0.5s ease;
+}
+/* 12:42 */
+.dropbtn {
+  margin-left: 60%;
+  width: 160px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.dropdown-content {
+  position: absolute;
+  display: none;
+  margin: 12% 70% 0;
+  background-color: #f9f9f9;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 111;
+}
+
+.dropbtn span {
+  background: #f00;
+  color: #fff;
+  border-radius: 50%;
+  padding: 0 5%;
+  font-weight: 600;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+/* 12:42 */
+
+.sidebar.close ~ .home-section
+{
+    width: calc(100% - 40px);
+    left: 40px;
+}
+
+.home-section nav
+{
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: calc(100% - 290px);
+    left: 290px;
+    z-index: 100;
+    padding: 0 20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+}
+
+.sidebar.close ~ .home-section nav
+{
+    left: 80px;
+    width: calc(100% - 80px);
+}
+
+.home-section nav .sidebar-button
+{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+nav .sidebar-button i
+{
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.home-section nav .profile-details
+{
+    display: flex;
+    align-items: center;
+    background: #F5F6FA;
+    border: 2px solid #EFEEF1;
+    border-radius: 6px;
+    height: 50px;
+    min-width: 220px; 
+    padding: 0 15px 0 2px;
+    margin-right:5%;
+}
+
+.home-section nav .icon
+{
+  margin-left:50%;
+}
+
+nav .profile-details .admin_name
+{
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+    margin: 0 10px;
+    white-space: nowrap;
+}
+ a{
+  text-decoration: none;
+}
+nav .profile-details i
+{
+    font-size: 25px;
+    color: #333;
+}
+
+nav span.text
+{
+    font-size: 20px;
+    color: #333;
+}
+
+@media (max-width: 900px) 
+{
+    nav .sidebar-button .text,
+    nav .profile-details .admin_name,
+    nav .profile-details i
+    {
+        display: none;
+    }
+    .home-section nav .profile-details
+    {
+        height: 50px;
+        min-width: 40px;
+    }
+}
+    
+@media (max-width: 600px) 
+{
+    .sidebar
+    {
+        width: 0;
+    }
+    .home-section
+    {
+        width: 100%;
+        left: 0;
+    }
+    .sidebar.close ~ .home-section
+    {
+        left: 60px;
+        width: calc(100% - 60px);
+    }
+    .home-section nav
+    {
+        width: 100%;
+        left: 0;
+    }
+}

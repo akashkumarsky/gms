@@ -1,0 +1,168 @@
+.home-section .config
+{
+    width:100%;
+    padding:7%;
+    height: 100vh;
+}
+
+.home-section .config h3
+{
+    font-size:2em;
+    font-weight:bold;
+    color:#11101D;
+    display:inline-block; 
+    padding:10px;
+}
+
+.home-section .config a.add_btn 
+{
+    background-color:#11101D;
+    color:white;
+    margin: 1.4% 1%;
+    padding:1% 4%;
+    border-radius:5px;
+    font-size:1.1em;
+    font-weight:bold;
+    text-decoration:none;
+    float: right;
+}
+
+.home-section .config a.add_btn i
+{
+    margin-left:7px;
+}
+
+.home-section .config a.back_btn 
+{
+    background-color:#11101D;
+    color:white;
+    margin: 1.4% 1%;
+    padding:1% 1%;
+    border-radius:5px;
+    font-weight:bold;
+    text-decoration:none;
+    font-size:1.6em;
+}
+
+.home-section .config table
+{
+    width:70%;
+    margin:3% auto;
+    background: white;
+}
+
+.home-section .config th
+{
+    text-align: start;
+    font-weight:600;
+    font-size: 1.2em;
+    color: #575757;
+    padding:2%;
+    border-top-left-radius:20px;
+}
+
+.home-section .config td
+{
+    background: #92d3ff;
+    padding:1% 2%;
+}
+
+.home-section .config .op_btn
+{
+    width:100%;
+    text-align:center;
+    background: #11101D;
+    border-radius: 5px;
+    padding:1% 5%;
+}
+
+.home-section .config table i
+{
+    color:white;
+    font-size:0.8em;
+}
+
+.home-section .config form
+{
+    width:80%;
+    margin:-1% 15%;
+}
+
+.home-section .config form label
+{
+    font-size:1em;
+    color:#11101D;
+}
+
+.home-section .config form input
+{
+    color:#11101D;
+}
+
+.home-section .config form:not(.mapp) input
+{
+    width:90%;
+    padding:1%;
+    margin:1% 0;
+    border-radius:5px;
+    font-size:1em;
+}
+
+
+
+.home-section .config form select
+{
+    width:90%;
+    padding:1%;
+    margin:1% 0;
+    border-radius:5px;
+    font-size:1em;
+    color:#11101D;
+}
+
+.home-section .config form input[type="submit"]
+{
+    width:90%;
+    padding:1%;
+    margin:1% 0;
+    border-radius:5px;
+    background: #11101D;
+    font-size:1em;
+    color:#fff;
+}
+
+.home-section .config form.details
+{
+    width:80%;
+    margin:1% 30%;
+}
+
+.home-section .config form.details .form-row
+{
+    display:flex;
+    flex-direction:row;
+    width:60%;
+}
+
+.home-section .config form.details .form-group
+{
+    width:47.5%;
+}
+
+.home-section .config form.details .lg
+{
+    width:100%;
+}
+
+.home-section .config form.details input
+{
+    width:90%;
+    padding:1%;
+    margin:1% 0;
+    border-radius:5px;
+    font-size:1.1em;
+    color:#11101D;
+}
+.error{
+    color: red;
+}

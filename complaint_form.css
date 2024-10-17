@@ -1,0 +1,74 @@
+.reg_wrapper{
+    /* background-color: aqua; */
+    padding:7% 7% 0 7%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%; 
+}
+
+.reg_wrapper .form-container{
+    background: #fff;
+    padding: 30px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+}
+
+.reg_wrapper .heading{
+    background: #015a80;
+    margin: -5% -4.5% 2% -4.5%;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+}
+
+.reg_wrapper .form-item{
+    margin-bottom: 2%;
+}
+
+.reg_wrapper .subject, .select-box{
+    display:flex;
+}
+
+.reg_wrapper .subject .form-item, .select-box .form-item{
+    width: 50%;
+}
+
+.reg_wrapper .select-box .form-item:first-child{
+    margin-right: 10%;
+}
+
+.reg_wrapper .form-item input[type="text"],
+.reg_wrapper .form-item input[type="file"],
+.reg_wrapper .form-item select
+{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #dadce0;
+    border-radius: 3px;
+}
+
+.reg_wrapper .form-item input[type="text"]:focus{
+    border-color: black; 
+}
+
+.reg_wrapper .form-item select:focus{
+    border-color: black; 
+}
+
+.reg_wrapper .form-container .form-item label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.reg_wrapper .btn input[type="submit"]{
+    margin:0 33%;
+    background: #1598d4;
+    border: 1px solid #1598d4;
+    padding: 1%;
+    width: 35%;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #fff;
+}

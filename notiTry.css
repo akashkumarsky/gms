@@ -1,0 +1,45 @@
+.notify-btn
+{
+    width:100%;
+    cursor: pointer;
+    margin-left:65%;
+    min-width: 60px;
+    font-size: 20px;
+}
+
+.notify-btn span
+{
+    background: red;
+    border-radius:50%;
+    padding:0 5px;
+    color:#fff;
+    font-size: 10px;
+    font-weight:700;
+    vertical-align: top;
+        margin-left: -10px;
+}
+
+#myDIV {
+    position: absolute;
+    float: right;
+    width: 30%;
+    max-height: 400px;
+    width:500px;
+    overflow-y: scroll;
+    padding: 10px;
+    background-color: #fff;
+    top:70px;
+    right:60px;
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#myDIV a {
+    text-decoration: none;
+    color: black;
+}
